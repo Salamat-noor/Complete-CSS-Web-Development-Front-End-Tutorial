@@ -1,0 +1,33 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+div {
+    float: left;
+    /* outline: 2px solid red; */
+}
+
+.ione,
+.itwo,
+.ithree,
+.ifour {
+    width: 250px;
+    height: 250px;
+}
+
+.itwo{
+    float: right;
+}
+.ifour{
+    float: right;
+}
+
+.tone,
+.ttwo,
+.tthree,
+.tfour {
+    width: 1000px;
+    height: 230px;
+    padding: 10px;
+}

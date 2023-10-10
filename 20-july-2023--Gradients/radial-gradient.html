@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radial Gradients</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            text-shadow: 3px 3px 3px grey;
+        }
+        .box-1 {
+            padding-top: 10%;
+            margin: 100px auto;
+            width: 700px;
+            height: 500px;
+            border: 1px solid black;
+            background-image: radial-gradient(closest-side at 10%,red 10%,yellow 30%,green);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box-1">
+        <h1>Radial Gradient ( Default To Bottom)</h1>
+    </div>
+</body>
+
+</html>

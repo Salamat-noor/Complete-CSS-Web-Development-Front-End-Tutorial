@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Image Borders</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #898686;
+        }
+
+        div.frame-image {
+            width: 25vw;
+            height: 50vh;
+            margin: 10vh auto;
+            background-image: url(./IMG_20230512_184942.jpg);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            border-image-source: url(border3.jpg);
+            border-image-slice: 45;
+            border-image-repeat: round;
+            border-image-width: 45px;
+        }
+
+        #another-frame {
+            margin-top: 100px;
+            position: absolute;
+            left: calc(50% - 150px);
+            border-radius: 50%;
+            border-image-source: url(./images.png);
+            border-image-width: 170px;
+            border-image-slice: 65;
+            border-image-repeat: round;
+            border-image-outset: 105px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="frame-image"></div>
+    <img src="./IMG_20230512_184942.jpg" alt="noor bhai" width="390px" height="500px" id="another-frame">
+</body>
+
+</html>

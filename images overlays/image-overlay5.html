@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Overlays</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: cursive;
+        }
+
+        body>h1 {
+            text-align: center;
+            transition: all 1.0s ease;
+        }
+
+        body:hover {
+            animation: relic 9.0s ease infinite;
+        }
+
+        @keyframes relic {
+            0% {
+                transform: rotate(0deg) skew(-30deg);
+            }
+
+            100% {
+                transform: translateX(20%) skew(-3) rotate(360deg);
+            }
+        }
+
+        h1>span {
+            color: crimson;
+        }
+
+        .box {
+            width: 350px;
+            height: 350px;
+            margin: 200px auto;
+            border-radius: 50%;
+            /* border: 1px solid #000; */
+            position: relative;
+            background: url(./IMG_20220514_173733.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 50% 70%;
+            padding: 0%;
+            background-attachment: fixed;
+            /* background: repeating-conic-gradient(rgb(0, 0, 0), rgb(255, 0, 0) 15%, blue 10%); */
+            box-shadow: 15px 10px 5px 10px rgb(255, 0, 0);
+        }
+
+        .box:hover {
+            animation: vibrat .01s linear;
+        }
+
+        @keyframes vibrat {
+            from {
+                transform: translateX(2px);
+                box-shadow: 0 0 1px 1px rgb(255, 255, 255);
+            }
+
+            to {
+                transform: translateX(0px);
+                box-shadow: 5px 10px 1px 1px rgb(0, 0, 0);
+
+            }
+        }
+
+        .box .box-pic {
+            width: inherit;
+            height: inherit;
+            position: relative;
+            transition: all .5s ease-in;
+            transform-origin: 95% 50% 0;
+            z-index: 1;
+        }
+
+        .box .box-pic:after {
+            content: "";
+            width: 5px;
+            height: 5px;
+            background: #ffffff;
+            position: absolute;
+            top: 50%;
+            left: 95%;
+            border-radius: 50%;
+            border: 1px outset #000000;
+        }
+
+        .box .box-pic img {
+            border-radius: 100%;
+            box-shadow: 0 0 3px 3px #000;
+            transition: all 3s;
+        }
+
+        .box:hover .box-pic {
+            transform: rotate(180deg);
+        }
+
+        .box:hover .box-pic img {
+            transform: rotate(580deg);
+        }
+
+        .box .box-content {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            text-align: center;
+            top: 0;
+            left: 0;
+            border-radius: 100%;
+            background: repeating-radial-gradient(rgb(0, 0, 0), blue 15%, violet 10%);
+            color: aliceblue;
+            padding-top: 30%;
+            line-height: 2.0;
+            transition: all .6s ease-in-out 0.3s;
+            transform-origin: 5% 50% 0;
+
+        }
+
+        .box .box-content:after {
+            content: "";
+            width: 5px;
+            height: 5px;
+            background: #ffffff;
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            border-radius: 50%;
+            border: 1px outset #000000;
+        }
+
+        .box:hover .box-content {
+            transform: rotate(-180deg);
+            box-shadow: 15px 10px 5px 10px rgb(0, 0, 255);
+        }
+
+        .rotating-box {
+            transition: all .5s ease;
+        }
+
+        .box .box-content:hover .rotating-box {
+            transform: rotate(-180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h1><span>Mr Nooor with</span><br>Image ovrelays</h1>
+
+    <div class="box">
+        <div class="box-pic">
+            <img src="./IMG_20230512_184942 - Copy.jpg" alt="mr noor" width="100%" height="100%">
+        </div>
+        <div class="box-content">
+            <div class="rotating-box">
+                <h3>III</h3>
+                <span>LLL000VVVUUU</span>
+                <p>VERY Much</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

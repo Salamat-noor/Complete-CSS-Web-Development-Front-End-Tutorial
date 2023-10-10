@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repeating Conic Gradients</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10%;
+        }
+        .conic-repeting{
+            width: 20vw;
+            height: 40vh;
+            border-radius: 100%;
+            border: 1px solid blue;
+            background-image: repeating-conic-gradient(red 0deg 10deg,blue 40deg 50deg,violet 50deg 60deg);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Repeating Conic Gradients</h1>
+    <div class="conic-repeting">
+
+    </div>
+</body>
+</html>

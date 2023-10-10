@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducing CSS</title>
+
+    <style>
+        body {
+            line-height: 28px;
+            font-size: 28px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>CSS selectors</h1>
+
+    <h3>In HTML There are 5 types of selectors : <sub style="font-size: 12px; line-height: 20px; color: orange;"> (
+            Simple , Combinator , Attrib ,
+            Pseudo-class , Pseudo-Element )</sub> </h3>
+
+    <!--Css Simple Selector -->
+
+    <ol>
+
+
+
+
+        <li> <span style="color: orange;"> Simple Selector :</span>
+            <dl>
+                <dt style="line-height: 105px;" align="center"> In Simple-Selector there are 5 types :
+                <dd>
+
+                </dd>
+
+                </dt>
+
+                <dt style="line-height: 45px; color: darkorange;">Element Selector ( HTML Element Name...)
+                <dd>
+                    This is one of the Simple-Selectors , In this categery we use's direct HTML Element to style it in
+                    the Css area.
+                </dd>
+                </dt>
+
+                <dt style="line-height: 45px; color: darkorange;">Id Selector ( #Id name... )
+                <dd>
+                    This is one of the Simple-Selectors , In this categery we have to make/Set a name for any markup
+                    Element with the, Id, attribute then we use that name in Css with # tag before Id name.
+                </dd>
+                </dt>
+
+                <dt style="line-height: 45px; color: darkorange;"> Class Selector ( .class name... )
+                <dd>
+                    Is selector me hum kisi bhi markup element ko ak nam dete hain wo nam har element ka ak attribute ha
+                    ( class ) us ko hum value k toor pr denge. yaani class k andar jo hum value denge us ko Css ki file
+                    me ( . ) pehle laga kr select krdenge.
+                </dd>
+                </dt>
+
+                <dt style="line-height: 45px; color: darkorange;"> Universal Selector :
+                <dd>
+                    Ye selector simple selectors me ata ha or ise ( * ) Multiply wale sign laga kr css me istimaal
+                    krenge jo HTML me sab elements ko styling dedega.
+                </dd>
+                </dt>
+
+                <dt style="line-height: 45px; color: darkorange;"> Grouping Selector :
+                <dd>
+                    Is simple selector ko grouping is lye kaha gya ha ki hum 1 se zyada b elements ko 1 hi time pe 1 hi
+                    style faraham kr skte hain is me hum elements ko ya element k nam ko ( , ) comma k sath likh kr
+                    grouping krte hain .
+                </dd>
+                </dt>
+            </dl>
+        </li>
+
+
+
+
+        <li> <span style="color: orange;"> Combinator Selector : </span>
+
+            <dl>
+                <dt style="line-height: 45px; color: darkorange;">Decendent Selector ( Space )
+                <dd>
+                    Is me hum elements ko 1 step space lagakr select krte hain ye 1 element k ander wale saare elements
+                    ko select krde ga elements jo ak element k andar nested bne hain un sb ko select krde ga. ye ander
+                    wale or us k b andar wale or us k b andar walun ko select krde ga
+                </dd>
+                </dt>
+
+                <dt style="line-height: 45px; color: darkorange;"> Child Selector ( > )
+                <dd>
+                    Ye selector hamesha ak element k elements ko select krde ga sirk 1 element k elements ko select kr
+                    dega us me ak or element ho skta ha or us k bhi elements ho skte hain lekin ya selector sirf diye
+                    hue element k ander elements ko select krde ga.
+                </dd>
+                </dt>
+
+                <dt style="line-height: 45px; color: darkorange;"> Adjacent Sibling Selector : ( + )
+                <dd>
+                    ye selector sirf 1 makhsoos element ko select krde ga maslan 1 heading ha or just us heading k foran
+                    bad 1 paragraph ha to wo usi pehla ane wale taman paragraph pr styling apply hogy.
+                </dd>
+                </dt>
+
+                <dt style="line-height: 45px; color: darkorange;"> General Sibling Selector : ( ~ )
+                <dd>
+                    Ye Selector Combinator selector ka ak qism ha jo tarteeb se sab ko select kre yaani 1 element ha us
+                    k bad same wale bohot elements ha to ya selector wahi sb ko select kr de ga, for example 1/2/us se b
+                    zayada heading ha or un sb k aage paragraph tags hain to ya html page me un sb ko select kr dega.
+                </dd>
+                </dt>
+            </dl>
+        </li>
+
+
+
+
+
+        <li><span style="color: orange;"> Attribute Selector : </span>
+
+            <dl>
+                <dt style="line-height: 45px; color: darkorange;"> ( Element[class="C-Name..."]{ ... } ) :
+                <dd>
+                    Is Selector ko hum attribute selector kehte hain ise hum kisi bhi element ka attribute dekr select
+                    krte hain or us attribute ko square braces k ander bnd krte hain to ye hota ha attribute selector.
+                </dd>
+                </dt>
+            </dl>
+        </li>
+
+
+
+
+
+        <li> <span style="color: orange;"> Pseudo-Class Selector : </span>
+
+            <dl>
+                <dt style="line-height: 45px; color: darkorange;"> (Element:nth-child(12345...) { Css-Property : Value ;
+                    } ) :
+                <dd>
+                    Ye selector Css me bohot bada kam saranjaan deta ha ye special actions k liiye b istimaal hota ha
+                    maslan (:hover,:focus,) and much more ye b ak elemenmt k ander wale elements ko select krne k liye
+                    istimaal hota ha usko hum (:first-child,last-child,nth-child() ) de kr istimaal krte hain.
+                </dd>
+                </dt>
+            </dl>
+        </li>
+
+
+
+
+
+        <li> <span style="color: orange;"> Pseudo-Element Selector : </span>
+            <dl>
+                <dt style="line-height: 45px; color: darkorange;"> Selector::first-letter { Property : value ;} :
+                <dd>
+
+                </dd>
+                </dt>
+            </dl>
+        </li>
+    </ol>
+
+</body>
+
+</html>

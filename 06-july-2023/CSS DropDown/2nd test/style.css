@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.dropdown {
+    display: inline-block;
+}
+.dropping-img-img{
+    width: 100%;
+    height: auto;
+}
+
+.dropping-img{
+    display: none;
+    width: 800px;
+    height: 500px;
+    
+    box-shadow: 10px 50px 25px 20px rgba(0, 0, 0, .8);
+    border-radius: 10px;
+}
+
+.dropdown:hover .dropping-img {
+    display: block;
+    opacity: .8;
+}

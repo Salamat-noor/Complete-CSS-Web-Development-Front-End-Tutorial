@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradients</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            color: aliceblue;
+            text-align: center;
+        }
+        h1,p{
+            padding-top: 10%;
+            text-shadow: 3px 3px 3px grey;
+        }
+        .linear-gradient {
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(to right,red,blue,green);
+        }
+        .new-gradient{
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(to right,rgba(0,255,0,0),rgba(0,255,0,1));
+        }
+        .newer-gradient{
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(-150deg,red,blue,green,brown,yellow,orange,violet);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="linear-gradient">
+        <h1>A linear Gradient with multiple colors</h1>
+        <p>A linear gradient is a collection of colors which makes the transition of multiple color for a background It
+            have a property called <code>linear-gradient :</code><code>( direction,color,color )</code></p>
+    </div>
+    <div class="new-gradient">
+        <h1>linear-gradient transparency left to right</h1>
+    </div>
+    <div class="newer-gradient">
+        <h1>Makeing a ranbow with linear-gradient right to left</h1>
+    </div>
+</body>
+
+</html>

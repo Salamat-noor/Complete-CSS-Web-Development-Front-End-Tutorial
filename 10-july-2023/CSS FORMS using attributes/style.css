@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #51494979;
+}
+
+fieldset {
+    border-radius: 5px;
+    border-color: antiquewhite;
+    min-height: 100vh;
+    border-style: inset;
+    padding: 10px;
+    margin: 5px;
+}
+
+legend {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 3px 5px 3px rgb(131, 127, 122);
+}
+
+.inner-form {
+    width: 600px;
+    max-height: 150vh;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    border: 1px outset blue;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px 5px blue;
+    background-color: #38afbc;
+}
+
+input {
+    width: 95%;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #ddd984;
+    color: rgb(251, 0, 255);
+    outline: none;
+}
+
+input:hover {
+    outline: 2px ridge blueviolet;
+}
+input[type='radio']{
+    outline: none;
+}
+
+label:hover {
+    border-bottom: 1px solid blueviolet;
+    border-radius: 5px;
+    color: rgb(250, 250, 250);
+}
+
+label[for="gender"] {
+    width: 100%;
+    display: inline-block;
+}
+
+label[for="male"],
+input[id="male"] {
+    width: 5%;
+    display: inline-block;
+}
+
+label[for="female"],
+input[id="female"] {
+    width: 7%;
+    display: inline-block;
+}
+
+label[for="human"] {
+    width: 100%;
+    display: block;
+}
+
+label[for="yes"],
+input[id="yes"],
+label[for='no'],
+input[id="no"] {
+    display: inline-block;
+    width: 10%;
+}
+
+label[for="comment"] {
+    display: block;
+    padding: 10px;
+    margin: 10px 0 0 0;
+}
+
+textarea {
+    width: 100%;
+    background-color: blanchedalmond;
+    color: black;
+    text-align: center;
+}

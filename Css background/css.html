@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Properties</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            background-image: url("./boat-8002718.jpg");
+            background-size: 100%;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            font-size: large;
+            color: rgb(0, 255, 183);
+            letter-spacing: 0.2rem;
+        }
+
+        dt {
+            line-height: 5rem;
+            font-size: x-large;
+        }
+
+        dd {
+            border: 5px dotted rgba(0, 255, 136, 0.754);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center">Background Property</h1>
+    <p style="max-width: 700px;">The Css background property is the short hand property of all background properties.
+        It's have many properties but we can merge them and write them in our code in a ine line.<mark>Some of
+            properties are given below.</mark>
+    </p>
+    <dl>
+        <dt align="center">background-color :
+        <dd style="background-color: rgb(168, 159, 147); max-width: 600px;">
+            The <mark> background-color </mark> property is used when we have to use the color of our pages background
+            or an elements background it makes the view more attractive.
+        </dd>
+        </dt>
+        <dt align="center">background-image :
+        <dd style="max-width: 600px;">
+            The background image property is used to add images to the web page or html Elements we can add single image
+            or multiple images to that section In this body we have to make images in this property with commas after
+            first <mark> url value </mark> The image is set by background-image property.
+        </dd>
+        </dt>
+        <dt align="center">background-size :
+        <dd style="max-width: 600px;">
+            The background-size property is used to set the size for the background-image There are multiple values we
+            can set the size by x-axis and y-axis / width / height, also we can set it for one by one it means for all
+            images in the <mark>background-image</mark> with seperated by commas for each.
+        </dd>
+        </dt>
+        <dt align="center">background-position :
+        <dd style="max-width: 600px;">
+            We can set the position for each image and by default it hides the multiple images backside of each image.
+            Or we can drag the images with numeric values first one will for x-axis and second value will be for y-axis.
+            Or it have some default values like : <br>
+            <ul>
+
+                <li>left</li>
+                <li>center</li>
+                <li>right</li>
+                <li>top</li>
+                <li>bottom</li>
+
+            </ul>
+        </dd>
+        </dt>
+        <dt align="center">background-attachment :
+        <dd style="max-width: 600px;">
+            it is one of the background-properties it makes the image scroll or fixed with the body or browsers page.It
+            have two values <mark>fixed</mark> , <mark>scroll</mark> scroll means the image will scrolls and finished
+            its size with the rest of the page.
+        </dd>
+        </dt>
+        <dt align="center">background-repeat :
+        <dd style="max-width: 600px;">
+            It is one of the most useable property it makes the background-image like multiple screens it repeats the
+            image in the screen size which in it locates. it have multiple values but we uses the most are <mark>repeat
+                (default)</mark>, <mark>no-repeat</mark>
+        </dd>
+        </dt>
+    </dl>
+</body>
+
+</html>

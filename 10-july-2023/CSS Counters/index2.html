@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counters second practicle</title>
+    <style>
+        body{
+            counter-reset: faraz;
+        }
+        h1::before{
+            content: "Heading " counter(faraz) " : ";
+            counter-increment: faraz 1;
+            color: crimson;
+        }
+        h1{
+            counter-reset: noor;
+        }
+        h2::before{
+            content: counter(faraz) "." counter(noor) " : ";
+            counter-increment: noor 1;
+            color: red;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <h1>Heading one</h1>
+
+    <h2>Heading two</h2>
+    <h2>Heading two</h2>
+    <h2>Heading two</h2>
+    <h2>Heading two</h2>
+    <h2>Heading two</h2>
+
+    <h1>Heading one</h1>
+    <h2>Heading two</h2>
+    <h2>Heading two</h2>
+    <h2>Heading two</h2>
+    <h2>Heading two</h2>
+    <h2>Heading two</h2>
+
+    <h1>Heading one</h1>
+
+    <h1>Heading one</h1>
+
+    <h1>Heading one</h1>
+</body>
+</html>

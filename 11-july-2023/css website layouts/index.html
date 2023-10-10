@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            border: 1px solid yellowgreen;
+        }
+
+        header.header {
+            text-align: center;
+            background-color: #1f1f1f;
+            color: aliceblue;
+            padding: 15px;
+        }
+
+        nav.nav {
+            text-align: center;
+            padding: 10px;
+            background-color: #ca7070;
+        }
+
+        nav.nav a {
+            padding: 5px 10px;
+            margin: 5px;
+            color: crimson;
+        }
+
+        div.aside1 {
+            width: 20%;
+            height: auto;
+            text-align: center;
+            padding: 10px;
+            background-color: #fa9600;
+            color: white;
+        }
+
+        div.center {
+            width: 60%;
+            text-align: center;
+            height: auto;
+            background-color: #b8fd25;
+            color: #fa9600;
+            margin: auto;
+        }
+
+        div.aside2 {
+            width: 20%;
+            height: auto;
+            text-align: center;
+            padding: 10px;
+            background-color: #fa9600;
+            color: white;
+        }
+
+        div.aside,
+        div.center {
+            float: left;
+            height: 80%;
+        }
+
+        footer.footer {
+            margin: 2px;
+            background-color: orange;
+            text-align: center;
+            padding: 10px;
+            height: 10%;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Header</h1>
+        <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, laboriosam!</small>
+    </header>
+    <nav class="nav">
+        <a href="">link</a><a href="">link</a><a href="">link</a><a href="">link</a><a href="">link</a>
+    </nav>
+    <div class="aside1 aside">
+        <h2>Aside Content</h2>
+    </div>
+    <div class="center">
+        <h1>Main Content</h1>
+        <small>Center Section</small>
+    </div>
+    <div class="aside2 aside">
+        <h2>Aside Content</h2>
+    </div>
+    <footer class="footer">
+        <a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, obcaecati.</a>
+    </footer>
+</body>
+
+</html>

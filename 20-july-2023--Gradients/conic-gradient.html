@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conic Gradients</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10%;
+        }
+
+        .cubic-G {
+            width: 20vw;
+            height: 40vh;
+            border-radius: 100%;
+            border-style: outset;
+            border-width: 5px;
+            border-color: blue;
+            box-shadow: 5px 10px 5px 5px blue;
+            background-image: conic-gradient(from 90deg,red,blue,green,violet,crimson,brown,yellow,black)
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Conic Gradients</h1>
+    <div class="cubic-G">
+        
+    </div>
+</body>
+
+</html>

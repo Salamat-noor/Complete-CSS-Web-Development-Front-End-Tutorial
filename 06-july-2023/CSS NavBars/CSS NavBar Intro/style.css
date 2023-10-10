@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+h1:hover {
+    width: fit-content;
+    margin: auto;
+    font-size: x-large;
+    color: #fff;
+    background-color: #000;
+}
+
+small {
+    display: block;
+}
+
+small:hover {
+    font-size: larger;
+}
+
+section {
+    border: 1px solid gray;
+}
+
+nav {
+    background-color: #c3a1a1;
+    opacity: .7;
+}
+
+ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+

@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::selection{
+    color: coral;
+    background: rgba(0, 0, 0, .5);
+    outline: 3px solid rebeccapurple;
+}
+div.gallery{
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 24.3%;
+}
+div.gallery:hover{
+    border: 1px solid #777;
+}
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+div.detail{
+    padding: 15px;
+    text-align: center;
+}

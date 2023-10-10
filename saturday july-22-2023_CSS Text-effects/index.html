@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Text Effects</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            counter-reset: for-heading;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2::before {
+            content: "Property" counter(for-heading) " : ";
+            counter-increment: for-heading 1;
+            color: crimson;
+        }
+
+        p {
+            text-indent: 100px;
+        }
+        span#vertical{
+            writing-mode:vertical-lr;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Advanced Text-Effects</h1>
+    <h1>CSS Text-Effect Properties</h1>
+    <h2>Text-ovrflow</h2>
+    <p>The CSS <code>text-overflow</code> property have two values, <code>clip</code> & <code>ellipsis</code> It is used
+        to make a text or a paragraph hide when it's parent element reaches max-width if text is too long to fit in it
+        in html
+    </p>
+    <h2>word-wrap</h2>
+    <p>The CSS <code>word-wrap</code> property is have one value <code>break-word</code>. It makes a word break to new
+        line when it's length is too big to fit in its parent element's width it makes the long long words break to new
+        lines
+    </p>
+    <h2>word-break</h2>
+    <p>
+        The CSS <code>word-break</code> property have two values, <code>break-all</code> & <code>keep-all</code>. It is
+        used to make whole sentence justify in it's parent element's body it acts like word-wrap when we set it's value
+        to break-all and It also makes whole alphabets fit in the given width of it's parent's element when value is
+        set'ed to keep-all.
+    </p>
+    <h2>writing-mode</h2>
+    <p>The CSS <code>writing-mode </code> have two or more values <code>horizontal-tb</code>,<code>vertical-rl</code> It
+        is used to show the written word in different directions like top-to-bottom and right-to-left in order to
+        vertically. for-example <span id="vertical">this has vertically writing-mode</span></p>
+</body>
+
+</html>

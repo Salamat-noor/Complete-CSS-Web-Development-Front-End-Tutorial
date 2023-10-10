@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Fira Sans;
+}
+
+body {
+    height: 200vh;
+}
+
+/* Horizontal NavBar */
+.navbar {
+    background-color: #dddddd;
+    border-radius: 10px;
+    /* margin: 5px; */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: left;
+    margin: 10px 15px;
+    text-align: center;
+}
+
+.navbar li:last-child {
+    float: right;
+}
+
+.navbar li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: rgb(82, 122, 136);
+}
+
+.navbar li a:hover {
+    color: rgb(136, 82, 131);
+    text-decoration-line: overline underline;
+    text-decoration-style: wavy;
+    text-decoration-color: blueviolet;
+    text-decoration-thickness: .9px;
+}

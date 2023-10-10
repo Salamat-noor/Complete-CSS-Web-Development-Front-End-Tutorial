@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css border image</title>
+    <style>
+        body {
+            margin: 0;
+            width: calc(100vw);
+            height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+            border: 1px solid saddlebrown;
+        }
+
+        .box {
+            margin: 50px auto;
+            padding: 20px;
+            width: 450px;
+            height: 150px;
+            border: 100px solid;
+            border-image-source: url(download.png);
+            border-image-outset: 50px;
+            border-image-slice: 100;
+        }
+        div.box > p{
+            border-image-source: url(./bdr.png);
+            border-image-slice: 30;
+            border-image-repeat: round;
+            border-image-width: 15px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, ipsam.</p>
+    </div>
+
+</body>
+
+</html>

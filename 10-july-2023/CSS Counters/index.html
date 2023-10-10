@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>CSS Counters</title>
+    <style>
+        body {
+            counter-reset: count;
+        }
+
+        ol {
+            list-style: none;
+        }
+
+        li::before {
+            content: "list-number " counter(count) " . ";
+            counter-increment: count 1;
+            font-size: 30px;
+        }
+
+        h1::before {
+            content: "Heading " counter(count) " . ";
+            counter-increment: count 1;
+        }
+
+        h1 {
+            counter-reset: new;
+        }
+
+        h2::before {
+            content: counter(count) "." counter(new);
+            counter-increment: new;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol> -->
+
+    <h1></h1>
+    <h2></h2>
+    <h2></h2>
+    <h2></h2>
+    <h2></h2>
+    <h2></h2>
+    <h1></h1>
+    <h2></h2>
+    <h2></h2>
+    <h2></h2>
+    <h2></h2>
+    <h2></h2>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+</body>
+
+</html>
